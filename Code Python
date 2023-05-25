@@ -1,0 +1,42 @@
+# class Rectangle:
+#     def __init__(self, x, y, width, heigth):
+#         self.x = x
+#         self.y = y
+#         self.width = width
+#         self.heigth = heigth
+#
+#     def __str__(self):
+#         return f'Rectangle: {self.x}, {self.y}, {self.width}, {self.heigth}'
+#
+#     def Square(self):
+#         return self.width * self.heigth
+#     #расчёт площади прямоугольника
+#
+# rectangle = Rectangle(5, 10, 50, 10)
+# print(rectangle)
+# print('Площадь прямоугольника: ', rectangle.Square())
+
+
+class Client:
+    def __init__(self, name, sename, city, cash):
+        self.name = name
+        self.sename = sename
+        self.city = city
+        self.cash = cash
+
+    # def __str__(self):
+    #     return f'{self.name} {self.sename}. {self.city}. Баланс: {self.cash} руб'
+
+    def __str__(self):
+        return f'{self.name} {self.sename}. Город: {self.city}'
+
+
+People1 = Client('Иван', 'Петров', 'Москва', '50')
+People2 = Client('Семён', 'Калдыбаев', 'Екат', '60')
+People3 = Client('Ольга', 'Алдын', 'Омск', '3')
+People4 = Client('Петя', 'Козлов', 'Ереван', '21')
+People5 = Client('Алисман', 'Мухтар', 'Новосибирск', '37')
+print(People1)
+List_of_People = [People1, People2, People3, People4, People5]
+for guest in List_of_People:
+    print(guest)
